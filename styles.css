@@ -1,0 +1,106 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f6f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  text-align: center;
+  max-width: 350px;
+  width: 90%;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+input,
+button {
+  padding: 12px;
+  margin: 12px 0;
+  width: 90%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button {
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+#barcodeSVG {
+  width: 85%;
+  margin: 15px auto;
+}
+
+.barcode-list {
+  max-height: 200px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+.footer-content a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  input,
+  button {
+    font-size: 0.95em;
+  }
+  html {
+    scale: 0.9;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  scale: 0.95;
+}
+
+body > * {
+  flex-shrink: 0;
+}
+
+footer {
+  margin-top: auto;
+  padding: 15px;
+}
